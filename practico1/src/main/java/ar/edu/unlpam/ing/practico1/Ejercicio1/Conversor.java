@@ -1,6 +1,4 @@
-package ar.edu.unlpam.ing.practico1.model;
-
-import ar.edu.unlpam.ing.practico1.interfaces.IConversor;
+package ar.edu.unlpam.ing.practico1.Ejercicio1;
 
 public class Conversor implements IConversor {
 

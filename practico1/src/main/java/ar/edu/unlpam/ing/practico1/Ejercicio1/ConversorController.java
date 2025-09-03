@@ -1,4 +1,4 @@
-package ar.edu.unlpam.ing.practico1.controller;
+package ar.edu.unlpam.ing.practico1.Ejercicio1;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,8 +6,6 @@ import java.util.Map;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-
-import ar.edu.unlpam.ing.practico1.model.Conversor;
 
 @RestController
 public class ConversorController {

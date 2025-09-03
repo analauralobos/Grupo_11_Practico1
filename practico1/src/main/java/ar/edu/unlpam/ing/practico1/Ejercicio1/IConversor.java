@@ -1,4 +1,4 @@
-package ar.edu.unlpam.ing.practico1.interfaces;
+package ar.edu.unlpam.ing.practico1.Ejercicio1;
 
 public interface IConversor {
     double celciusAFahrenheit(double celcius);
