@@ -13,10 +13,8 @@ public class ApiController {
         this.apiService = apiService;
     }
 
-    // GET /consumir?url=https://api.publicapis.org/entries
     @GetMapping("/consumir")
     public String consumir(@RequestParam String url) {
         return apiService.consumirApi(url);
     }
 }
-

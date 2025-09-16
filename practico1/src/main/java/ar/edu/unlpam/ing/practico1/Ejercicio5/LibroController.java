@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/libros")
+@RequestMapping("/libros")//ruta general
 public class LibroController {
     private final LibroService service;
 

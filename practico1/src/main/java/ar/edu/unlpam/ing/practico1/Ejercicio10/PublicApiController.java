@@ -7,16 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PublicApiController {
 
-    private final PublicApiService apiService;
+    private final PublicApiService service;
 
-    public PublicApiController(PublicApiService apiService) {
-        this.apiService = apiService;
+    public PublicApiController(PublicApiService service) {
+        this.service = service;
     }
 
-    // GET /publicapi?endpoint=<URL del endpoint de Postman>
     @GetMapping("/publicapi")
     public String consumir(@RequestParam String endpoint) {
-        return apiService.consumirEndpoint(endpoint);
+        return service.consumirEndpoint(endpoint);
     }
 }
-

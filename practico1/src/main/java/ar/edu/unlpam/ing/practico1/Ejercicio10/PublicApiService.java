@@ -8,13 +8,11 @@ public class PublicApiService {
 
     private final RestTemplate restTemplate;
 
-    public PublicApiService(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
+    public PublicApiService() {
+        this.restTemplate = new RestTemplate();
     }
 
-    // Consumir cualquier endpoint de la colección
-    public String consumirEndpoint(String url) {
-        return restTemplate.getForObject(url, String.class);
+    public String consumirEndpoint(String endpoint) {
+        return restTemplate.getForObject(endpoint, String.class);
     }
 }
-
